@@ -1,0 +1,6 @@
+set line \%1
+set carrier-watch off
+set speed 115200
+set flow xon/xoff
+robust
+connect

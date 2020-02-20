@@ -1,0 +1,16 @@
+[alias]
+	ctags = "!sh -c '[ -f .git/hooks/ctags ] || git init; .git/hooks/ctags' git-ctags"
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
+[help]
+	autocorrect = 1
+[init]
+	templatedir = ~/.git_template
+[merge]
+	tool = fugitive
+[mergetool "fugitive"]
+	cmd = vim -f -c \"Gvdiffsplit!\" \"$MERGED\"
+[user]
+	email = nicolas.heemeryck@gmail.com
+	name = Nicolas Heemeryck
